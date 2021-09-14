@@ -1,0 +1,31 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.4'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'RTorrent'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	
+/* M12_Milestone2
+ * Dependencias añadidas manualmente, según el enunciado.
+ * No fue posible añadir Spring Data JPA ('org.springframework.data:spring-data-jpa') porque el
+ * proyecto vacío que se obtiene de 'https://start.spring.io/' no tiene embebida una base de datos,
+ * al contrario que el proyecto modelo 'https://github.com/IT-Academy-BCN/springBootInitialDemo'
+ * que se utiliza en el Milestone1. */ 
+	implementation 'org.springframework:spring-tx'
+	implementation 'org.springframework:spring-webmvc'
+}
+
+test {
+	useJUnitPlatform()
+}

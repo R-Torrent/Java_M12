@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "c48e5dd8-15b1-42e8-b58d-28b8cf042bda",
+		"name": "M12_Milestone1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "M12_Milestone1Fase1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/lang/es",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"lang",
+						"es"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "M12_Milestone1Fase3Query1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{IP}}:{{port}}",
+					"protocol": "http",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{port}}"
+				}
+			},
+			"response": [
+				{
+					"name": "M12_Milestone1Fase3Query1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP}}:{{port}}",
+							"protocol": "http",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=ISO-8859-1"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Sep 2021 10:37:49 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "Hello World!"
+				}
+			]
+		},
+		{
+			"name": "M12_Milestone1Fase3Query2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{IP}}:{{port}}/Roger",
+					"protocol": "http",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"Roger"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "M12_Milestone1Fase3Query2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{IP}}:{{port}}/Roger",
+							"protocol": "http",
+							"host": [
+								"{{IP}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"Roger"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=ISO-8859-1"
+						},
+						{
+							"key": "Content-Length",
+							"value": "11"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Sep 2021 10:39:24 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "Hello Roger"
+				}
+			]
+		}
+	]
+}
